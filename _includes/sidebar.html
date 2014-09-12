@@ -1,16 +1,26 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
+
+
       <h1>
         <a href="{{ site.baseurl }}">
           {{ site.title }}
         </a>
       </h1>
       <p class="lead">{{ site.description }}</p>
+
+      <p class="lead"><form class="subform" action="http://gitat.us7.list-manage.com/subscribe/post?u=c077cf2dc30777ab6e605c7fc&amp;id=e65eebd6a3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
+          <em>subscribe to our newsletter:</em><br>
+          <input type="email" style="width:100%;border-radius:4px;border:1px solid #cccccc; padding:3px; font-size:16px;text-align:center;" name="EMAIL" class="form-control" id="appendedInputButton" placeholder="Enter your email & press enter!" required>
+          <!--<button type="submit" name="subscribe" class="sub_button ">Subscribe</button>-->
+      </form></p>
+
+
     </div>
 
+<!--
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
 
       {% comment %}
         The code below dynamically generates a sidebar nav of pages with
@@ -25,12 +35,12 @@
           {% endif %}
         {% endif %}
       {% endfor %}
-
-      <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
-      <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
-      <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
     </nav>
-
-    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+-->
+    <p>
+      <a href="mailto:tips@gitat.me" title="Email Git@Me" target="_blank"><i class="fa fa-fw fa-at fa-lg"></i></a>&nbsp;&nbsp;
+      <a href="http://twitter.com/git_atme" title="Follow Git@Me on Twitter" target="_blank"><i class="fa fa-fw fa-twitter fa-lg"></i></a>&nbsp;&nbsp;
+      <a href="atom.xml" title="Subscribe to Git@Me via RSS" target="_blank"><i class="fa fa-fw fa-rss fa-lg"></i></a>&nbsp;&nbsp;
+      </p>
   </div>
 </div>
