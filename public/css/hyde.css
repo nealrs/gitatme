@@ -67,6 +67,7 @@ html {
     bottom: 0;
     width: 18rem;
     text-align: left;
+    padding-top:150px;
   }
 }
 
@@ -231,7 +232,7 @@ a.btn {
 }
 
 .btn-primary:hover {
-background-color:#001F3F;
+  background-color:#001F3F;
 }
 
 
@@ -240,5 +241,35 @@ background-color:#001F3F;
 }
 
 .btn-inverse:hover {
-  background-color:#001F3F;
+  background-color:#333333;
+}
+
+.sharefb{
+  background-color:#3b5998;
+}
+
+.sharefb:hover{
+  background-color:#000032;
+}
+
+.sharetw{
+  background-color:#55ACEE;
+}
+
+.sharetw:hover{
+  background-color:#2279BB;
+}
+
+.share{
+  margin-bottom: 1rem;
+}
+
+.emailinput{
+  width:100%;
+  border-radius:4px;
+  border:1px solid #cccccc;
+  padding:3px;
+  font-size:16px;
+  text-align:center;
+  margin-bottom:.5rem;
 }

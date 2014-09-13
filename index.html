@@ -12,7 +12,14 @@ title: Home
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }} &middot; {% for tag in post.tags %} <span class="langtag">{{tag}}</span> {% endfor %}</span>
+    <span class="post-date">{{ post.date | date_to_string }} &middot; {% for tag in post.tags %} <span class="langtag">{{tag}}</span> {% endfor %} </span>
+
+    <!--<div class="share">
+
+      <a class="btn sharefb" href="" title="Share this on Facebook" target="_blank"><i class="fa fa-fw fa-facebook"></i> Share</a>
+      <a class="btn sharetw" href="" title="Tweet this" target="_blank"><i class="fa fa-fw fa-twitter"></i> Tweet</a>
+
+    </div>-->
 
     {{ post.content }}
 

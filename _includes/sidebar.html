@@ -1,46 +1,24 @@
 <div class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="container ">
     <div class="sidebar-about">
-
-
       <h1>
         <a href="{{ site.baseurl }}">
           {{ site.title }}
         </a>
       </h1>
-      <p class="lead">{{ site.description }}</p>
+      <span style="margin-bottom:.5rem;" class="lead">{{ site.description }}</span>
 
-      <p class="lead"><form class="subform" action="http://gitat.us7.list-manage.com/subscribe/post?u=c077cf2dc30777ab6e605c7fc&amp;id=e65eebd6a3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
-          <em>subscribe to our newsletter:</em><br>
-          <input type="email" style="width:100%;border-radius:4px;border:1px solid #cccccc; padding:3px; font-size:16px;text-align:center;" name="EMAIL" class="form-control" id="appendedInputButton" placeholder="Enter your email & press enter!" required>
+      <span style="margin-bottom:.5rem;" class="lead"><form class="subform" action="http://gitat.us7.list-manage.com/subscribe/post?u=c077cf2dc30777ab6e605c7fc&amp;id=e65eebd6a3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
+          <em>sign up for our newsletter:</em>
+          <input type="email" class="emailinput" name="EMAIL" class="form-control" id="appendedInputButton" placeholder="Enter your email & press enter!" required>
           <!--<button type="submit" name="subscribe" class="sub_button ">Subscribe</button>-->
-      </form></p>
+      </form></span>
 
-
-    </div>
-
-<!--
-    <nav class="sidebar-nav">
-
-      {% comment %}
-        The code below dynamically generates a sidebar nav of pages with
-        `layout: page` in the front-matter. See readme for usage.
-      {% endcomment %}
-
-      {% assign pages_list = site.pages %}
-      {% for node in pages_list %}
-        {% if node.title != null %}
-          {% if node.layout == "page" %}
-            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-    </nav>
--->
     <p>
       <a href="mailto:tips@gitat.me" title="Email Git@Me" target="_blank"><i class="fa fa-fw fa-at fa-2x"></i></a>&nbsp;&nbsp;
       <a href="http://twitter.com/git_atme" title="Follow Git@Me on Twitter" target="_blank"><i class="fa fa-fw fa-twitter fa-2x"></i></a>&nbsp;&nbsp;
-      <a href="atom.xml" title="Subscribe to Git@Me via RSS" target="_blank"><i class="fa fa-fw fa-rss fa-2x"></i></a>&nbsp;&nbsp;
+      <a href="{{site.baseurl}}atom.xml" title="Subscribe to Git@Me via RSS" target="_blank"><i class="fa fa-fw fa-rss fa-2x"></i></a>&nbsp;&nbsp;
       </p>
+    </div>
   </div>
 </div>
