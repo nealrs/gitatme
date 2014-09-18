@@ -133,7 +133,7 @@ hr {
   position: relative;
   margin: 1.5rem 0;
   border: 0;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #cccccc;
   border-bottom: 1px solid #fff;
 }
 
@@ -357,7 +357,7 @@ tbody tr:nth-child(odd) th {
 .related {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #cccccc;
 }
 .related-posts {
   padding-left: 0;
@@ -399,7 +399,7 @@ tbody tr:nth-child(odd) th {
 .pagination-item {
   display: block;
   padding: 1rem;
-  border: 1px solid #eee;
+  border: 1px solid #cccccc;
 }
 .pagination-item:first-child {
   margin-bottom: -1px;

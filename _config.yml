@@ -11,6 +11,7 @@ tagline:          'Discover great open source projects every week'
 description:      'Exploring open source'
 url:              http://gitat.me
 baseurl:          /
+fbc-comments-firebase: https://gitat-me.firebaseio.com/
 
 author:
   name:           'Neal Shyam'

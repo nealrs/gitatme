@@ -6,6 +6,12 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }} &middot; {% for tag in page.tags %} <span class="langtag">{{tag}}</span> {% endfor %}</span>
   {{ content }}
+
+  <!-- FIREBASE COMMENTS -->
+  <span id="comments">
+    {% include firebase-comments.ext %}
+  </span>
+  <!-- END FIREBASE COMMENTS -->
 </div>
 
 <div class="pagination">

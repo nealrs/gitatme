@@ -209,7 +209,7 @@ a.sidebar-nav-item:focus {
 
   display: inline-block;
   padding: 4px 12px;
-  margin-bottom: 0;
+  margin-bottom: 4px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -244,20 +244,28 @@ a.btn {
   background-color:#333333;
 }
 
-.sharefb{
+.sharef{
   background-color:#3b5998;
 }
 
-.sharefb:hover{
+.sharef:hover{
   background-color:#000032;
 }
 
-.sharetw{
+.sharet{
   background-color:#55ACEE;
 }
 
-.sharetw:hover{
+.sharet:hover{
   background-color:#2279BB;
+}
+
+.shareg{
+  background-color:#FF4136;
+}
+
+.shareg:hover{
+  background-color:#CC0E03;
 }
 
 .share{
@@ -272,4 +280,48 @@ a.btn {
   font-size:16px;
   text-align:center;
   margin-bottom:.7rem;
+}
+
+.social{
+  text-transform: none;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+}
+
+.social:hover{
+  color:#0074D9;
+}
+
+.comment-input{
+  border: 1px solid #cccccc;
+  padding:.5rem;
+  border-radius:6px;
+  width:100%;
+  max-width:100%;
+}
+
+img.avatar{
+  margin:0 !important;
+  display: inline !important;
+  vertical-align:top;
+  height: 64px;
+  width: 64px;
+  radius:6px;
+}
+
+.avatar-block{
+  margin-right:16px;
+  float:left;
+}
+
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
 }
