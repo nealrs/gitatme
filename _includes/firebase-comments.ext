@@ -130,7 +130,8 @@
       // re-enable the submit button
       $('#fbc-comment-form-submit').prop('disabled', false);
 
-      fbPostComments.push({'uid': currentUser.uid, 'comment': comment}, function (error) {
+      fbPostComments.push({'uid': currentUser.uid, 'comment': comment, 'time': Firebase.ServerValue.TIMESTAMP
+}, function (error) {
         if (error != null) {
           alert(error.message + " Stop screwing around!")
         } else {
@@ -146,6 +147,11 @@
     fbPostComments.on('child_added', function (snapshot) {
       var message = snapshot.val();
       var messageComment = message.comment;
+      //var messageTime = message.time.toLocaleDateString();
+
+      var messageTime = new Date(message.time).toLocaleDateString();
+      if (messageTime == "Invalid Date"){messageTime = "¯\\_(ツ)_/¯";}
+
 
       fb.child("users/" + message.uid).once('value', function (userSnap) {
         var user = userSnap.val();
@@ -155,7 +161,8 @@
           comment: scrubCommentText(messageComment),
           displayName: scrubComment(user.displayName),
           picture: scrubComment(user.picture),
-          link: scrubComment(user.link)
+          link: scrubComment(user.link),
+          time: scrubComment(messageTime)
         });
 
         $("#fbc-comments-list").append(commentHtml);
