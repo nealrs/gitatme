@@ -22,4 +22,4 @@ The key is simplicity, and that's why I like <strong><a href="{{ page.project }}
 
 <strong><a href="{{ page.demo }}" target="_blank" title="{{ page.pn }} demo">Here's a demo</a></strong> (best viewed on desktop).
 
-<center><a href="{{page.project}}" class="btn btn-primary " title="Get {{page.pn}} on GitHub" target="_blank" style="margin-right:10px;">Get {{page.pn}}</a> <a href="{{ page.url }}#comments" class="btn btn-inverse" title="Discuss this issue of Git @ Me online">Join the discussion</a></center>
+<center><a href="{{page.project}}" class="btn btn-primary " title="Get {{page.pn}} on GitHub" target="_blank" >Get {{page.pn}}</a> <a href="{{ page.url }}#comments" class="btn btn-inverse" title="Discuss this issue of Git @ Me online">Join the discussion</a></center>

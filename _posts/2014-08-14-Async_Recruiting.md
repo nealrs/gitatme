@@ -30,4 +30,4 @@ Build your own video job application with <strong><a href="{{ page.author }}" ta
 
 <em>BTW, <strong><a href="{{page.cpjobs}}" target="_blank" title="ChallengePost is hiring">we're hiring Ruby developers at ChallengePost</a></strong>.</em>
 
-<center><a href="{{page.project}}" class="btn btn-primary " title="Get {{page.pn}} on GitHub" target="_blank" style="margin-right:10px;">Get the code</a> <a href="{{ page.url }}#comments" class="btn btn-inverse" title="Discuss this issue of Git @ Me online">Discuss it</a></center>
+<center><a href="{{page.project}}" class="btn btn-primary " title="Get {{page.pn}} on GitHub" target="_blank" >Get the code</a> <a href="{{ page.url }}#comments" class="btn btn-inverse" title="Discuss this issue of Git @ Me online">Discuss it</a></center>

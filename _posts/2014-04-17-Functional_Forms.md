@@ -25,4 +25,4 @@ Fortunately, <strong><a href="{{ page.author }}" target="_blank" title="{{ page.
 
 Demo: <strong><a href="{{ page.demo }}" target="_blank" title="{{ page.pn }} demo">*interactive* offer form</a></strong> (best viewed on desktop).
 
-<center><a href="{{page.project}}" class="btn btn-primary " title="Get {{page.pn}} on GitHub" target="_blank" style="margin-right:10px;">Get {{page.pn}}</a> <a href="{{ page.url }}#comments" class="btn btn-inverse" title="Discuss this issue of Git @ Me online">Join the discussion</a></center>
+<center><a href="{{page.project}}" class="btn btn-primary " title="Get {{page.pn}} on GitHub" target="_blank" >Get {{page.pn}}</a> <a href="{{ page.url }}#comments" class="btn btn-inverse" title="Discuss this issue of Git @ Me online">Join the discussion</a></center>

@@ -20,4 +20,4 @@ Say what you will about their pledge drives, National Public Radio knows open so
 
 Let that sink in for a minute. You can now use one of the most widely deployed apps *of all time* as a content management system. Read NPR's <strong><a href="{{ page.blog }}" target="_blank" title="{{ page.pn }} blog post">excellent blog post </a></strong> about {{page.pn}} and give it a try!
 
-<center><a href="{{page.project}}" class="btn btn-primary " title="Get {{page.pn}} on GitHub" target="_blank" style="margin-right:10px;">Get {{page.pn}}</a> <a href="{{ page.url }}#comments" class="btn btn-inverse" title="Discuss this issue of Git @ Me online">Join the discussion</a></center>
+<center><a href="{{page.project}}" class="btn btn-primary " title="Get {{page.pn}} on GitHub" target="_blank" >Get {{page.pn}}</a> <a href="{{ page.url }}#comments" class="btn btn-inverse" title="Discuss this issue of Git @ Me online">Join the discussion</a></center>

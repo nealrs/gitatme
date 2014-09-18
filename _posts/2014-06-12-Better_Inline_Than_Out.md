@@ -24,4 +24,4 @@ If you need to confirm or collect user input, try doing it inline with {{ page.a
 
 <center><img src="{{page.img}}" alt="{{page.pn}} in action" title="{{page.pn}} in action" style="border:1px solid #021a40;"></center>
 
-<center><a href="{{page.project}}" class="btn btn-primary " title="Get {{page.pn}} on GitHub" target="_blank" style="margin-right:10px;">Get {{page.pn}}</a> <a href="{{ page.url }}#comments" class="btn btn-inverse" title="Discuss this issue of Git @ Me online">Join discussion</a></center>
+<center><a href="{{page.project}}" class="btn btn-primary " title="Get {{page.pn}} on GitHub" target="_blank" >Get {{page.pn}}</a> <a href="{{ page.url }}#comments" class="btn btn-inverse" title="Discuss this issue of Git @ Me online">Join discussion</a></center>

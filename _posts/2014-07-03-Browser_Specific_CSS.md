@@ -47,4 +47,4 @@ Cool right? Well, here's the bad news: the author, <strong><a href="{{ page.auth
 
 It'd be a pity for this project to end, so please fork it and contribute!
 
-<center><a href="{{page.exp}}" class="btn btn-primary " title="Get {{page.pn}} on GitHub" target="_blank" style="margin-right:10px;">Get {{page.pn}}</a> <a href="{{ page.url }}#comments" class="btn btn-inverse" title="Discuss this issue of Git @ Me online">Discuss it</a></center>
+<center><a href="{{page.exp}}" class="btn btn-primary " title="Get {{page.pn}} on GitHub" target="_blank" >Get {{page.pn}}</a> <a href="{{ page.url }}#comments" class="btn btn-inverse" title="Discuss this issue of Git @ Me online">Discuss it</a></center>

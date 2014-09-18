@@ -24,4 +24,4 @@ Fortunately, {{ page.an }}'s Chrome extension <strong><a href="{{ page.project }
 
 <center><img src="{{page.img}}" alt="{{page.pn}} in action" title="{{page.pn}} in action" style="border:1px solid #021a40;"></center>
 
-<center><a href="{{page.webstore}}" class="btn btn-primary " title="Get {{page.pn}} at the Chrome Web Store" target="_blank" style="margin-right:10px;">Install {{page.pn}}</a> <a href="{{ page.url }}#comments" class="btn btn-inverse" title="Discuss this issue of Git @ Me online">Join discussion</a></center>
+<center><a href="{{page.webstore}}" class="btn btn-primary " title="Get {{page.pn}} at the Chrome Web Store" target="_blank" >Install {{page.pn}}</a> <a href="{{ page.url }}#comments" class="btn btn-inverse" title="Discuss this issue of Git @ Me online">Join discussion</a></center>

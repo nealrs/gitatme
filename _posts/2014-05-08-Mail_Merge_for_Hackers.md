@@ -26,4 +26,4 @@ But what about a basic mail merge, (e.g. first name, title, and city), to forty 
 $ postman -html t.html -text t.txt -csv r.csv -sender "Foo Bar &lt;foo@bar.com&gt;" -subject "Mail Merge Madness!" -server mail.foo.com -port 587 -user "foo@bar.com" -password "pa$$w0rd"
 ```
 
-<center><a href="{{page.project}}" class="btn btn-primary " title="Get {{page.pn}} on GitHub" target="_blank" style="margin-right:10px;">Get {{page.pn}}</a> <a href="{{ page.url }}#comments" class="btn btn-inverse" title="Discuss this issue of Git @ Me online">Join the discussion</a></center>
+<center><a href="{{page.project}}" class="btn btn-primary " title="Get {{page.pn}} on GitHub" target="_blank" >Get {{page.pn}}</a> <a href="{{ page.url }}#comments" class="btn btn-inverse" title="Discuss this issue of Git @ Me online">Join the discussion</a></center>

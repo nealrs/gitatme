@@ -36,4 +36,4 @@ print rapportive.request("neal@audioshocker.com")
 
 Why is this a big deal? Because, coupled with commonly used email address patterns, it's trivial to brute force a LinkedIn member's contact & employment information. So trivial in fact, that <strong><a href="{{ page.gist }}" target="_blank" title="{{page.pn}} demo script - please don't use this for evil">I wrote a script to do it for you</a></strong>. Please use it responsibly.
 
-<center><a href="{{page.project}}" class="btn btn-primary " title="Get {{page.pn}} on GitHub" target="_blank" style="margin-right:10px;">Get {{page.pn}}</a> <a href="{{ page.url }}#comments" class="btn btn-inverse" title="Discuss this issue of Git @ Me online">Join discussion</a></center>
+<center><a href="{{page.project}}" class="btn btn-primary " title="Get {{page.pn}} on GitHub" target="_blank" >Get {{page.pn}}</a> <a href="{{ page.url }}#comments" class="btn btn-inverse" title="Discuss this issue of Git @ Me online">Join discussion</a></center>

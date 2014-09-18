@@ -28,4 +28,4 @@ With <strong><a href="{{ page.project }}" target="_blank" title="{{ page.pn }} o
 <div class="video-container"><iframe src="//www.youtube-nocookie.com/embed/ADPV0Er7szc?rel=0" frameborder="0" allowfullscreen></iframe></div>	
 </center>
 
-<center><a href="{{page.webstore}}" class="btn btn-primary " title="Get {{page.pn}} on GitHub" target="_blank" style="margin-right:10px;">Get {{page.pn}}</a> <a href="{{ page.url }}#comments" class="btn btn-inverse" title="Discuss this issue of Git @ Me online">Join discussion</a></center>
+<center><a href="{{page.webstore}}" class="btn btn-primary " title="Get {{page.pn}} on GitHub" target="_blank" >Get {{page.pn}}</a> <a href="{{ page.url }}#comments" class="btn btn-inverse" title="Discuss this issue of Git @ Me online">Join discussion</a></center>
