@@ -130,7 +130,7 @@
       // re-enable the submit button
       $('#fbc-comment-form-submit').prop('disabled', false);
 
-      fbPostComments.push({'uid': currentUser.uid, 'comment': comment, 'time': Firebase.ServerValue.TIMESTAMP
+      fbPostComments.push({'uid': currentUser.uid, 'comment': marked(comment), 'time': Firebase.ServerValue.TIMESTAMP
 }, function (error) {
         if (error != null) {
           alert(error.message + " Stop screwing around!")
@@ -187,7 +187,8 @@
 
   // Parse comment markdown into HTML (should also sanitize by default.)
   function scrubCommentText(value){
-    var parsedmd = marked(value);
+    //var parsedmd = marked(value);
+    var parsedmd = value;
     return parsedmd;
   }
 
