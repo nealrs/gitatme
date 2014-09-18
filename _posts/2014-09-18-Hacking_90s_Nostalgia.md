@@ -16,7 +16,7 @@ myfork: "https://github.com/nealrs/bopit/tree/patch-1"
 team: "http://challengepost.com/software/bop-it-x-leap-motion"
 ---
 
-I'm a sucker for great hacks and after seeing over 230 of them at <strong><a href="{{ page.pa10 }}" target="_blank" title="PennApps X submission gallery">PennApps X</a></strong>, I really wanted to try something new: _hardware hacking_.
+I'm a sucker for great hacks, and after seeing over 230 of them at <strong><a href="{{ page.pa10 }}" target="_blank" title="PennApps X submission gallery">PennApps X</a></strong>, I really wanted to try something new: _hardware hacking_.
 
 On Monday I borrowed a Leap Motion, installed the SDK, and started looking at tutorials & demos. Three days later, I have yet to write a single line of code.
 
