@@ -313,8 +313,8 @@ img.avatar{
 .avatar-block{
   margin-right:16px;
   float:left;
+  width:80px;
 }
-
 
 .clearfix:before,
 .clearfix:after {
@@ -324,4 +324,17 @@ img.avatar{
 
 .clearfix:after {
   clear: both;
+}
+
+.comment-block {
+  margin-bottom:5px;
+}
+
+.comment-login-text {
+  text-align:center;
+  margin-top:16px;
+}
+
+.comment-login-buttons {
+  text-align:center;
 }
