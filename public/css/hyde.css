@@ -311,7 +311,7 @@ img.avatar{
 }
 
 .avatar-block{
-  margin-right:16px;
+  margin-right:10px;
   float:left;
   width:80px;
 }
@@ -327,7 +327,7 @@ img.avatar{
 }
 
 .comment-block {
-  margin-bottom:5px;
+  margin-bottom:10px;
 }
 
 .comment-login-text {
@@ -337,4 +337,8 @@ img.avatar{
 
 .comment-login-buttons {
   text-align:center;
+}
+
+.comment-no-bottom-margin {
+  margin-bottom:0 !important;
 }

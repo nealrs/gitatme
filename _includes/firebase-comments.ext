@@ -50,12 +50,14 @@
     // Load up useful information from site and page variables
     var firebase = "{{site.fbc-comments-firebase}}";
     var postId = "{{page.id || default}}";
-    var blogName = "{{site.name || default}}";
+    //var blogName = "{{site.name || default}}";
 
     // Sanitize the Firebase keys, since Jekyll allows more possible characters
     postId = sanitizeFirebaseKey(postId);
 
-    var fb = new Firebase(firebase + blogName);
+    //var fb = new Firebase(firebase + blogName);
+    var fb = new Firebase(firebase);
+
     var fbPostComments = fb.child("posts/" + postId);
     var fbPostCommentCount = fb.child("comment-counts/" + postId);
 
@@ -67,12 +69,12 @@
         // An error occurred while attempting login
         console.log(error);
       } else if (user) {
-        // Expand the user object to include profile photo and url
-        currentUser = {
-          uid: user.uid,
-          provider: user.provider,
-          displayName: user.displayName
-        };
+          // Expand the user object to include profile photo and url
+          currentUser = {
+            uid: user.uid,
+            provider: user.provider,
+            displayName: user.displayName
+          };
 
         // Normalize the pictures and links across services
         switch (user.provider) {
@@ -85,8 +87,7 @@
             currentUser.link = user.thirdPartyUserData.link;
             break;
           case "twitter":
-            tavatar = user.thirdPartyUserData.profile_image_url;
-            currentUser.picture = tavatar.replace(/_normal/gi, "");
+            currentUser.picture = user.thirdPartyUserData.profile_image_url.replace(/_normal/gi, "");
             currentUser.link = "http://twitter.com/" + user.thirdPartyUserData.screen_name;
             break;
           case "github":
@@ -141,7 +142,7 @@
       fbPostComments.push({'uid': currentUser.uid, 'comment': storecomment, 'time': Firebase.ServerValue.TIMESTAMP
 }, function (error) {
         if (error != null) {
-          alert(error.message + " Stop screwing around!")
+          alert(error.message + " Stop screwing around!");
         } else {
           // Comment was posted. Increment the comment count
           fbPostCommentCount.transaction(function (current_value) {
@@ -155,11 +156,8 @@
     fbPostComments.on('child_added', function (snapshot) {
       var message = snapshot.val();
       var messageComment = message.comment;
-      //var messageTime = message.time.toLocaleDateString();
-
       var messageTime = new Date(message.time).toLocaleDateString();
       if (messageTime == "Invalid Date"){messageTime = "¯\\_(ツ)_/¯";}
-
 
       fb.child("users/" + message.uid).once('value', function (userSnap) {
         var user = userSnap.val();
@@ -174,14 +172,17 @@
         });
 
         $("#fbc-comments-list").append(commentHtml);
+
+        // override default styling for last p tag in each comment block - don't want the default margin-bottom.
+        $(".comment-text").find("p:last-of-type").addClass("comment-no-bottom-margin");
       })
     });
     fbPostCommentCount.on('value', function (snapshot) {
       if (snapshot.val() == null){
         $(".fbc-comment-count").text("0");
       } else {
-        $(".fbc-comment-count").text(snapshot.val());
-      }
+          $(".fbc-comment-count").text(snapshot.val());
+        }
     });
   });
 
@@ -203,6 +204,7 @@
   function sanitizeFirebaseKey(key) {
     return key.replace(/[\.\/\$\[\]\x7F\x00-\x1F]/g, "-");
   }
+
 </script>
 <script type="application/vnd.fbc-template" id="fbc-comment-template">
   {% include firebase-comment-template.html %}
