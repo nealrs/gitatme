@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Git @ Me - {{page.title}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="MHMhLJjgN2zrDvs8TMLMd8OIlqmJpwBkx9ODNDJL3fg" />
+  <meta name="description" content="Git @ Me - Discover great open source projects every week">
+  <meta name="author" content="Neal Shyam">
+
+  <!-- Le styles -->
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+
+  <!--- custom styles & js -->
+  <link href="/assets/gam.css" rel="stylesheet">
+	<link href="/assets/octicons.css" rel="stylesheet" >
+  <script src="/assets/gam.js"></script>
+  <script src="//google-code-prettify.googlecode.com/svn/loader/run_prettify.js?skin=desert"></script>
+
+	<!--- petal / github style commenting -->
+	<link rel="stylesheet" href="//gam.s3.amazonaws.com/cdn/petal.min.css" type="text/css" />
+	<script src="//gam.s3.amazonaws.com/cdn/petal.min.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+  	$(document).ready(function(){  // important!
+    	$.petal.init("nealrs/gitatme-comments", {{ page.issue }}) // $.petal.init(repo, issue_id)
+    });
+	</script>
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="../assets/js/html5shiv.js"></script>
+  <![endif]-->
+
+  <!-- Fav and touch icons -->
+  <link rel="shortcut icon" type="image/png" href="/assets/favicon.png">
+
+  <!-- Twitter card meta tags -->
+  <meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@git_atme">
+	<meta name="twitter:creator" content="@git_atme">
+	<meta name="twitter:domain" content="gitat.me">
+
+	{% if page.title %}
+		<meta name="twitter:title" content="{{ page.title }}">
+	{% else %}
+		<meta name="twitter:title" content="{{ site.title }}">
+	{% endif %}
+
+	{% if page.url %}
+		<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+	{% endif %}
+
+	{% if page.description %}
+		<meta name="twitter:description" content="{{ page.description }}">
+	{% else %}
+		<meta name="twitter:description" content="{{ site.description }}">
+	{% endif %}
+
+	{% if page.image %}
+		<meta name="twitter:image:src" content="{{ site.url }}/path/to/image/{{ page.image }}">
+	{% else %}
+		<meta name="twitter:image:src" content="http://gitat.me/assets/avatar.png">
+	{% endif %}
+
+  <!-- Open Graph meta tags-->
+  <meta content="{{ site.title }}" property="og:site_name">
+	{% if page.title %}
+		<meta content="{{ page.title }}" property="og:title">
+	{% else %}
+		<meta content="{{ site.title }}" property="og:title">
+	{% endif %}
+
+	{% if page.title %}
+		<meta content="article" property="og:type">
+	{% else %}
+		<meta content="website" property="og:type">
+	{% endif %}
+
+	{% if page.description %}
+		<meta content="{{ page.description }}" property="og:description">
+	{% else %}
+		<meta content="{{ site.description }}" property="og:description">
+	{% endif %}
+
+	{% if page.url %}
+		<meta content="{{ site.url }}{{ page.url }}" property="og:url">
+	{% endif %}
+	{% if page.date %}
+		<meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+		<meta content="{{ site.url }}/about/" property="article:author">
+	{% endif %}
+
+	{% if page.image %}
+		<meta content="{{ site.url }}/assets/img/posts/{{ page.image }}" property="og:image">
+	{% else %}
+		<meta content="http://gitat.me/assets/avatar.png" property="og:image">
+	{% endif %}
+
+	{% if page.categories %}
+		{% for category in page.categories limit:1 %}
+		<meta content="{{ category }}" property="article:section">
+		{% endfor %}
+	{% endif %}
+
+	{% if page.tags %}
+		{% for tag in page.tags %}
+		<meta content="{{ tag }}" property="article:tag">
+		{% endfor %}
+	{% endif %}
+
+</head>
+
+<body>
+
+  <!-- head block -->
+  <div class="container">
+    <!--- tablet & desktop head -->
+    <div class="span8 offset2 ">
+    	<div class="row ">
+        <div class = "head_blk">
+					<h3 class="visible-desktop headlink"><a class= "headlink" href="/">Git <span class="mega-octicon octicon-mention"></span> Me | Discover great open source projects</a></h3>
+					<h4 class="visible-tablet headlink"><a class= "headlink" href="/">Git @ Me | Discover great open source projects</a></h4>
+					<p class="visible-phone headlink"><a class= "headlink" href="/"><strong>Git <span class="octicon octicon-mention"></span> Me | Great open source projects</a></strong></p>
+					<p>Get inspired with fun open source hacks & sign up for our free weekly newsletter!</p>
+
+					<!-- Begin MailChimp Signup Form -->
+					<form class="form-inline form_blk" action="http://gitat.us7.list-manage.com/subscribe/post?u=c077cf2dc30777ab6e605c7fc&amp;id=e65eebd6a3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<!--<label class="hidden-phone">Sign up for our weekly newsletter! </label>-->
+						<div class="input-append ">
+							<input type="email" value="" name="EMAIL" class="form-control" id="appendedInputButton" placeholder="Enter your email">
+							<button type="submit" name="subscribe" class="btn btn-primary ">Subscribe</button>
+						</div>
+					</form>
+        <!-- End MailChimp Signup Form -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--- main content block -->
+  {{content}}
+
+  <!-- footer block -->
+  <div class="container">
+    <!-- Mobile Social Rail -->
+    <div class= "row ">
+      <span class="span8 offset2 text-center">
+        <p>
+          <a href="mailto:tips@gitat.me" target="_blank" title="tips@gitat.me"><i class="icon-envelope icon-2x" style="text-decoration: none"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="http://twitter.com/git_atme" target="_blank" title="@git_atme"><i class="icon-twitter icon-2x" style="text-decoration: none"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="http://feeds.feedburner.com/gitatme" target="_blank" title="RSS Feed"><i class="icon-rss icon-2x" style="text-decoration: none"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="https://github.com/nealrs/gitatme-comments/issues" target="_blank" title="Comments"><i class="icon-comments icon-2x" style="text-decoration: none"></i></a>
+        </p>
+      </span>
+    </div>
+
+    <div class= "row">
+      <span class="span8 offset2 text-center">
+        <p>&copy; 2013 <a href="http://nealshyam.com" target="_blank">Neal Shyam</a> <span class="muted">::</span> <a href="#about" target="_blank" data-toggle="modal">About</a> <span class="muted">::</span> <a href="#terms" target="_blank" data-toggle="modal">Terms & Privacy</a></p>
+      </span>
+    </div>
+  </div>
+
+  <!-- About Modal -->
+  <div id ="about" class="modal hide fade" data-keyboard="true" tabindex="-1">
+    <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Get At Who?</h3>
+    </div>
+    <div class="modal-body">
+    <p><a href="https://plus.google.com/106729159255897575431?rel=author">Hi</a> there, I'm <a href="http://www.nealshyam.com" target="_blank">Neal Shyam</a> and I like to build stuff.</p>
+    <p>I started Git @ Me because I like hacking on open source projects, and was having trouble discovering projects that could use my help & interested me.</p>
+    <p>Every Thursday, Git @ Me highlights one handpicked oss project. I'll tell you what it is and why I dig it. After that, it's up to you.</p>
+    <p>Got a tip? Email <a href="mailto:tips@gitat.me" target="_blank">tips@gitat.me</a> or tweet <a href="http://twitter.com/git_atme" target="_blank">@git_atme</a></p>
+    </div>
+    <div class="modal-footer">
+    <!-- Begin MailChimp Signup Form -->
+    	<form class="form-inline" action="http://gitat.us7.list-manage.com/subscribe/post?u=c077cf2dc30777ab6e605c7fc&amp;id=e65eebd6a3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <label class="hidden-phone">join our mailing list: </label>
+          <div class="input-append ">
+            <input type="email" value="" name="EMAIL" class="form-control" id="appendedInputButton" placeholder="Enter email address">
+            <button type="submit" name="subscribe" class="btn btn-inverse ">Subscribe</submit>
+          </div>
+
+          &nbsp;<a href="#" class="btn btn-primary hidden-phone" data-dismiss="modal" aria-hidden="true">Close</a>
+
+        </form>
+    <!-- End MailChimp Signup Form -->
+    </div>
+  </div>
+
+  <!-- Terms & Privacy Modal -->
+  <div id ="terms" class="modal hide fade" data-keyboard="true" tabindex="-1">
+    <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Terms & Privacy</h3>
+    </div>
+    <div class="modal-body">
+    <p>I promise not to be a dick or do the following:</p>
+    <ul>
+    	<li>Send you email that you didn't ask or signup for</li>
+    	<li>Sell your personal information</li>
+    	<li>Willfully allow a security breach</li>
+    	<li>Punch animals</li>
+    </ul>
+
+    <p>By subscribing to the Git @ Me mailing list, you are opting in to a weekly newsletter. You may <a href="http://gitat.us7.list-manage.com/unsubscribe?u=c077cf2dc30777ab6e605c7fc&id=e65eebd6a3" target="_blank">unsubscribe</a> at any time.</p>
+
+    <p>Did I miss something? Email <a href="mailto:neal@gitat.me" target="_blank">me</a> and we'll address it.</p>
+    </div>
+    <div class="modal-footer">
+    <!-- Begin MailChimp Signup Form -->
+        <form class="form-inline" action="http://gitat.us7.list-manage.com/subscribe/post?u=c077cf2dc30777ab6e605c7fc&amp;id=e65eebd6a3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <label class="hidden-phone">join our mailing list: </label>
+          <div class="input-append ">
+            <input type="email" value="" name="EMAIL" class="form-control" id="appendedInputButton" placeholder="Enter email address">
+            <button type="submit" name="subscribe" class="btn btn-inverse ">Subscribe</submit>
+          </div>
+
+          &nbsp;<a href="#" class="btn btn-primary hidden-phone" data-dismiss="modal" aria-hidden="true">Close</a>
+
+        </form>
+    <!-- End MailChimp Signup Form -->
+    </div>
+  </div>
+  <script>$(".tip").tooltip({placement:"bottom"})</script>
+  <script>$(".tip2").tooltip({placement:"right"})</script>
+
+
+</body>
+</html>

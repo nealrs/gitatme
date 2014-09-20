@@ -1,0 +1,86 @@
+---
+layout: default
+title: Discover great open source projects every week
+---
+
+<!--- main content block -->
+<div class="container body_cont">
+  <div class = "span8 offset2">
+
+    <!-- ad container  -->
+  <!--<div class="row">
+    <div class="cp_blk ">
+     <p><small class="muted">New challenges & hackathons from ChallengePost</small></p>
+    	<p><a href="http://siliconimage.challengepost.com/?utm_source=gitatme&utm_medium=adbox&utm_campaign=siliconimage" title="Register for the Dual Screen App Challenge" target="_blank"><img src="http://s3.amazonaws.com/challengepost/photos/production/challenge_photos/000/081/029/datas/full_width.png?1394569820" alt="Dual Screen App Challenge" ></a></p>
+    	<p>
+      	<strong>
+      		<span style="padding-bottom:5px;"><i class="icon-trophy icon-large" style="color:#0088cc;"></i>&nbsp;$100,000&nbsp;<small class = "muted">IN PRIZES</small></span></strong>
+      		<span class="hidden-phone">&nbsp;&nbsp;&nbsp;<a href="http://siliconimage.challengepost.com/?utm_source=gitatme&utm_medium=adbox&utm_campaign=siliconimage" title="Register for the Dual Screen App Challenge" target="_blank"><span class="btn btn-primary">Join the Challenge!</span></a></span>
+    	</p>
+    </div>
+ 	</div>-->
+
+   <!-- bb container  -->
+   <!--<div class="row">
+     <div class="bb_blk ">
+       <p><strong>If you like Git @ Me - Try Bachelor Brunch</strong></p>
+       <p>BB brings you three handpicked stories every Saturday. Vote up your favorites and show our curator who's boss. It's more than just tech news!
+       <a href="http://eepurl.com/P0Msf" title="Sign up for the Bachelor Brunch Newsletter" target="_blank"><span class="label label-important">Sign up here</span></a></p>
+      </div>
+    </div>-->
+
+    <!-- update block -->
+    <!--<div class="row ">
+      <div class="update_blk ">
+        <p><strong>Write for Git @ Me! <a class="close " href="#"><i class="icon-remove-sign hide_info icon-large"></i></a></strong></p>
+
+        <div class="togbox">
+          <p>Are you a Node nerd, rabid on Rails, or cuckoo for C/C++? Write a guest post and give your favorite open source projects some love! Interested? <strong><a href="mailto:neal@gitat.me?subject=guest post" target="_blank">Email Neal</a></strong></p>
+        </div>
+      </div>
+	</div>-->
+
+    <select class="visible-phone input-large">
+      <option>All languages selected</option>
+      <option>JavaScript</option>
+      <option>Python</option>
+      <option>Ruby</option>
+      <option>Go</option>
+      <option>Objective-C</option>
+      <option>Clojure</option>
+      <option>PHP</option>
+      <option>C#</option>
+      <option>Shell</option>
+    </select>
+
+    <!--- post block -->
+    {% for post in site.posts %}
+    <div class="row ">
+      <div class="blk ">
+        <p><strong>
+          <a class= "headlink" href="{{ post.url }}">{{ post.title }}</a>
+          <a class="close togit"><i class="icon-minus-sign togicon icon-large"></i><i class="icon-plus-sign togicon hide icon-large"></i></a></p>
+          <p>{{ post.date | date: "%m/%d/%Y" }} <span class="muted">//</span> {% for tag in post.tags %} <span class="label lang_tag">{{tag}}</span> {% endfor %}
+        </strong></p>
+
+        <div class="togbox">
+		  		{{ post.content }}
+
+		  <!-- Sharing footer -->
+		  <!--<hr>
+		  <p style="text-align:center;">
+      	<a class = "foottag " href="http://twitter.com/home?status=great read: {{ site.url }}{{post.url}} via @git_atme" title="Tweet it"><i style = "padding-right:30px;"class="icon-twitter icon-large "></i></a>
+        <a class = "foottag " href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]={{ site.url }}{{post.url}}&p[title]=git at me | {{post.title}}" title="Like it"><i style = "padding-right:30px;" class="icon-thumbs-up icon-large "></i></a>
+	    	<a class = "foottag " href="mailto:?subject=FW: {{post.title}} | Git at Me Newsletter
+&body=Check out this issue of git at me: {{site.url}}{{post.url}}" title="Email it"><i style = "padding-right:30px;" class="icon-envelope icon-large "></i></a>
+        <a class = "foottag " a href="https://plus.google.com/share?url={{site.url}}{{post.url}}" onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"title="Google+ it"><i class="icon-google-plus icon-large "></i></a>
+      </p>-->
+
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+
+  </div>
+</div>

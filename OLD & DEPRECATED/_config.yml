@@ -1,0 +1,10 @@
+name: git at me - discover great open source projects every week
+markdown: redcarpet
+highlighter: pygments
+timezone: America/New_York
+TZ: America/New_York
+url: http://gitat.me
+demo: http://gam.s3.amazonaws.com/demo/
+img: http://gam.s3.amazonaws.com/img/
+aws: http://gam.s3.amazonaws.com/
+description: Git @ Me - a weekly newsletter about great open source projects!

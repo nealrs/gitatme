@@ -1,0 +1,61 @@
+---
+layout: default
+comments: true
+---
+<div class="container body_cont">
+  <div class = "span8 offset2">
+
+    <!--- ad container  -->
+		<!--- <div class="row">
+			<div class="ad_blk ">
+			 <p><small class="muted">sponsored by</small> <a class="close " href="#"><i class="icon-remove-sign hide_ad icon-large"></i></a><br>
+				Bootstrapping on a budget? BlerpCity has you covered. <a href="#">Save 50% with code <strong>BLERPME</strong></a>!
+				</p>
+			</div>
+		</div>-->
+
+    <div class="row ">
+      <div class="blk ">
+        <p><strong>
+          <a class= "headlink" href="{{ page.url }}">{{ page.title }}</a>
+          <span class = "hidden-phone">
+            {% if page.next.url %}<a class = "close " href="{{page.next.url}}" title="Next Post: {{page.next.title}}"><i style = "margin-left:10px;" class="icon-circle-arrow-right icon-large "></i></a>{% endif %}
+            {% if page.previous.url %}<a class = "close " href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}"><i style = "margin-left:10px;"class="icon-circle-arrow-left icon-large "></i></a>{% endif %}
+		    <a class = "close " href="http://twitter.com/home?status=great read: {{ site.url }}{{page.url}} via @git_atme" title="Tweet it"><i class="icon-twitter icon-large "></i></a>
+            <a class = "close " href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]={{ site.url }}{{page.url}}&p[title]=git at me | {{page.title}}" title="Like it"><i style = "margin-right:10px;" class="icon-thumbs-up-alt icon-large "></i></a>
+		  	<a class = "close " href="mailto:?subject=FW: {{page.title}} | Git at me Newsletter
+&body=Check out this issue of git at me: {{site.url}}{{page.url}}" title="Email it"><i style = "margin-right:10px;" class="icon-envelope-alt icon-large "></i></a>
+		  </span></p>
+		  <p>{{ page.date | date: "%m/%d/%Y" }} <span class="muted">//</span> {% for tag in page.tags %} <span class="label">{{tag}}</span> {% endfor %}
+        </strong></p>
+
+        <p class = "visible-phone ">
+          <span class = "pull-right">
+						{% if page.next.url %}<a class = "close " href="{{page.next.url}}" title="Next Post: {{page.next.title}}"><i style = "margin-left:10px;" class="icon-circle-arrow-right icon-large "></i></a>{% endif %}
+            {% if page.previous.url %}<a class = "close " href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}"><i class="icon-circle-arrow-left icon-large "></i></a>{% endif %}</span>
+		  		<a class = "mobile_social_post " href="mailto:?subject=FW: {{page.title}} | Git at me Newsletter
+&body=Check out this issue of git at me: {{site.url}}{{page.url}}" title="Email it"><i style = "margin-right:10px;" class="icon-envelope-alt icon-large "></i></a>
+		  		<a class = "mobile_social_post " href="http://twitter.com/home?status=great read {{ site.url }}{{page.url}} via @git_atme" title="Tweet it"><i style = "margin-right:10px;" class="icon-twitter icon-large "></i></a>
+      		<a class = "mobile_social_post " href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]={{ site.url }}{{page.url}}&p[title]=git at me | {{page.title}}" title="Like it"><i class="icon-thumbs-up-alt icon-large "></i></a>
+				</p>
+
+		{{ content }}
+
+	    <!-- petal comments -->
+	    <div id = "comments" class="petal"></div>
+
+      </div>
+    </div>
+
+    <!-- bb container  -->
+    <div class="row">
+      <div class="bb_blk ">
+        <p><strong>If you like Git @ Me - Try Das Brunch</strong></p>
+        <p>Be the smart one at brunch. Three great articles every Saturday morning!
+        <a href="http://dasbrun.ch" title="Sign up for the Das Brunch Newsletter" target="_blank"><span class="label label-important">Sign up now</span></a>
+        </p>
+       </div>
+     </div>
+     
+  </div>
+</div>
