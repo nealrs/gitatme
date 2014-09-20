@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>git -at me</title>
+    <description>git -at me RSS Feed</description>
+    <link>http://gitat.me</link>
+    <category>Open Source</category> 
+    <copyright>2013 Neal Shyam + git -at me</copyright> 
+    <language>en-us</language>
+    <atom:link href="http://gitat.me/rss.xml" rel="self" type="application/rss+xml" />
+      
+            <item>
+        <title>Time Keeps on Slippin'</title>
+        <description>
+          <![CDATA[<p>Time may be infinite - but your work week and development resources aren't.</p> 
+
+			<p>In short sprints, it's fairly easy to understand the impact of a one hour delay for a quick bugfix, or lost productivity due to a mid-week holiday. You don't need a full featured project management suite either - just fire up a console window. 
+			
+			<p><strong><a href="https://github.com/bokmann/business_time" taret="_blank">David Bock's Business Time</strong></a> <span class="label label-info">Ruby</span> gem is a handy tool for traversing the calendar and doing math in terms of business hours & days. With a few short statements, you can forecast start & end dates and predict how potential delays will affect dependent activities. Read more...</p>]]>
+        </description>
+        <content:encoded>
+          <![CDATA[<p>Time may be infinite - but your work week and development resources aren't.</p> 
+
+			<p>In short sprints, it's fairly easy to understand the impact of a one hour delay for a quick bugfix, or lost productivity due to a mid-week holiday. You don't need a full featured project management suite either - just fire up a console window. 
+			
+			<p><strong><a href="https://github.com/bokmann/business_time" taret="_blank">David Bock's Business Time</strong></a> <span class="label label-info">Ruby</span> gem is a handy tool for traversing the calendar and doing math in terms of business hours & days. With a few short statements, you can forecast start & end dates and predict how potential delays will affect dependent activities. Read more...</p>]]>
+        </content:encoded>
+        <link>http://gitat.me</link>
+        <guid>http://gitat.me/#3</guid>
+      </item>
+      
+      <item>
+        <title>Let's Talk About Sex</title>
+        <description>
+          <![CDATA[<p>Pop quiz hotshot! How many of the following git -at me subscribers (Taylor, Sacha, Jamie, and Brooklyn) are male? Would your answer change if they were British or Russian?</p>
+
+			<p>With the increasing number of androgynous, curiously spelled, and region-specific names, gender is a touchy subject. Much like asking a woman when her baby is due, it's not a detail you want to guess at blindly. You're liable to walk away with a black eye.</p>
+
+			<p>For most applications, gender is a nice data point to have, but it doesn't affect core functionality. Consequently, you may decide to eliminate it, reducing <a href="https://medium.com/design-startups/3c390ea15d1" target="_blank">signup friction</a> and concerns about <a href="http://www.theguardian.com/world/2013/sep/05/nsa-gchq-encryption-codes-security" target="_blank">data security</a>.</p>
+
+			<p>And that's all well and good - until you get traction and want to monetize your user base. Targeted ads, data mining, selling anonymized data - whatever it is, gender suddenly becomes an important piece of the puzzle. Now what?</p>
+
+			<p>Enter <a href="https://github.com/bmuller/sexmachine" target="_blank"><strong>Sex Machine</strong></a>. This <span class="label label-info">Ruby</span> gem from <a href="https://github.com/bmuller" target="_blank"><strong>Brian Muller</strong> </a>implements <a href="http://www.heise.de/ct/ftp/07/17/182/" target="_blank"><strong>Jörg Michael's Gender program</strong></a>, which uses a comprehensive regionalized dictionary to determine if a name is male, female, mostly male, mostly female, or too androgynous for a definitive conclusion. Read more...</p>]]>
+        </description>
+        <content:encoded>
+          <![CDATA[<p>Pop quiz hotshot! How many of the following git -at me subscribers (Taylor, Sacha, Jamie, and Brooklyn) are male? Would your answer change if they were British or Russian?</p>
+
+			<p>With the increasing number of androgynous, curiously spelled, and region-specific names, gender is a touchy subject. Much like asking a woman when her baby is due, it's not a detail you want to guess at blindly. You're liable to walk away with a black eye.</p>
+
+			<p>For most applications, gender is a nice data point to have, but it doesn't affect core functionality. Consequently, you may decide to eliminate it, reducing <a href="https://medium.com/design-startups/3c390ea15d1" target="_blank">signup friction</a> and concerns about <a href="http://www.theguardian.com/world/2013/sep/05/nsa-gchq-encryption-codes-security" target="_blank">data security</a>.</p>
+
+			<p>And that's all well and good - until you get traction and want to monetize your user base. Targeted ads, data mining, selling anonymized data - whatever it is, gender suddenly becomes an important piece of the puzzle. Now what?</p>
+
+			<p>Enter <a href="https://github.com/bmuller/sexmachine" target="_blank"><strong>Sex Machine</strong></a>. This <span class="label label-info">Ruby</span> gem from <a href="https://github.com/bmuller" target="_blank"><strong>Brian Muller</strong> </a>implements <a href="http://www.heise.de/ct/ftp/07/17/182/" target="_blank"><strong>Jörg Michael's Gender program</strong></a>, which uses a comprehensive regionalized dictionary to determine if a name is male, female, mostly male, mostly female, or too androgynous for a definitive conclusion. Read more...</p>]]>
+        </content:encoded>
+        <link>http://gitat.me</link>
+        <guid>http://gitat.me/#2</guid>
+      </item>
+      
+      <item>
+        <title>Keep the discussion going on GitHub</title>
+        <description>
+          <![CDATA[Visit our <a href="https://github.com/nealrs/gitatme-comments/issues" target="_blank">issues</a> page on GitHub to stay involved. Submit new topic ideas, start a conversation, or ask a question.]]>
+        </description>
+        <content:encoded>
+          <![CDATA[Visit our <a href="https://github.com/nealrs/gitatme-comments/issues" target="_blank">issues</a> page on GitHub to stay involved. Submit new topic ideas, start a conversation, or ask a question.]]>
+        </content:encoded>
+        <link>http://gitat.me</link>
+        <guid>http://gitat.me/#1_5</guid>
+      </item>
+      
+      <item>
+        <title>A RegEx Fairytale</title>
+        <description>
+          <![CDATA[Whether you're a novice or a seasoned developer, Regular Expressions are notoriously tricky. It's a bit like asking Rumpelstiltskin for help. Sure he can validate your form inputs - but you'll need to hand over your firstborn child and make him a sandwich too. Next time, try VerbalExpressions.
+          VerbalExpressions enables you to construct RegEx statements that you can actually understand. Think of it as SQL-level simplicity for Regular Expressions. For example, to validate a URL in javascript: Read more...]]>
+        </description>
+        <content:encoded>
+          <![CDATA[<p>Whether you're a novice or a seasoned developer, Regular Expressions are notoriously tricky. It's a bit like asking Rumpelstiltskin for help. Sure he can validate your form inputs - but you'll need to hand over your firstborn child and make him a sandwich too. Next time, try VerbalExpressions.</p>
+          <p>VerbalExpressions enables you to construct RegEx statements that you can actually understand. Think of it as SQL-level simplicity for Regular Expressions. For example, to validate a URL in javascript: Read more...</p>]]>
+        </content:encoded>
+        <link>http://gitat.me</link>
+        <guid>http://gitat.me/#1</guid>
+      </item>
+      
+  </channel>
+</rss>

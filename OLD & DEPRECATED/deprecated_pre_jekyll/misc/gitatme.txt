@@ -1,0 +1,89 @@
+need a way to discover projects to contribute to - but what about an app that just helps you find open issues/contribs?
+----- match people up with contribs based on parameters (what languages do you know?) 
+
+- donate a patch
+
+-- poll for issues, get repo language.
+
+-- find users who specialize in a language who have opted into the service
+
+
+
+NEWSLETTER
+---------
+daily/ 2x week (mon/ thurs) Email list + blog.
+choose 3 languages you're into, and we'll send you a digest of 1 project per language, or order/highlight/ tailor a list to your needs.
+
+Each list notes the project owner, a link to the readme/repo, a short curated write-up of why you should contribute, plus a screenshot / link to live demo?
+
+Sign up with github? 
+
+Activate your sub by submitting a pull request?<<lame, don't do this.
+
+Sell ad space/ promotions in the email to build rev.
+
+Branch out into 'repo dating'/yenta/match making type or service.
+
+Augment newsletter with a blog - same content (like wakefield), with targeted ads.
+
+Plus job listing links?
+
+Editorial content could include links to tutorials/interviews with oss folks and other devs/treps.
+
+Potential advertisers:
+Codeacademy,
+Rackspace,
+Udemy,
+Stack overflow,
+Dropbox,
+Whatever ad network sparrow uses,
+Sendgrid,
+Github,
+Atlassian,
+Any B2b/ saas dev resources,
+37 signals/basecamp,
+Spotify,
+Kiip,
+Mobile app service providers/companies that have apis
+---------
+
+githack
+git x git
+bit x git
+githacker
+gitinit.com
+gitpile.com
+
+gitat.me
+- we're launching soon, join our mailing list to be get a first look at Git@Me! (no funny business, we promise!)
+- neal@gitat.me
+- Git @ Me
+
+
+when you sign up - the confirmation page asks you to select your top 2 or 3 languages.
+
+every day, email looks like this: 
+--------------------------------------------------------
+
+Heyo XXXXX,
+
+2 line intro + news snippet
+
+Repo X [languages][category]
+- 2 lines about it + link (+ graphic if possible)
+
+Repo Y [languages][category]
+- 2 lines about it + link (+ graphic if possible)
+
+Repo Z [languages][category]
+- 2 lines about it + link (+ graphic if possible)
+
+
+Sponsored content | special offer
+
+signoff + call for submissions + feedback
+
+Social & engagement --> up to the minute news via facebook/rss/twitter/online
+
+view online
+--------------------------------------------------------
