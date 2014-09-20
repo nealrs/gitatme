@@ -164,7 +164,7 @@
 
         // this is not working with an id reference to a template (possibly because it's 6 year old code), so give it the html instead
         var commentHtml = tmpl($("#fbc-comment-template").html(), {
-          comment: scrubCommentText(messageComment),
+          comment: messageComment,
           displayName: scrubComment(user.displayName),
           picture: scrubComment(user.picture),
           link: scrubComment(user.link),
@@ -192,13 +192,6 @@
     var escaped = $('<div/>').text(value).html();
     //Replace newlines with line breaks
     return escaped.replace(/[\n\r]/g, "<br />");
-  }
-
-  // Parse comment markdown into HTML (should also sanitize by default.)
-  function scrubCommentText(value){
-    //var parsedmd = marked(value);
-    var parsedmd = value;
-    return parsedmd;
   }
 
   function sanitizeFirebaseKey(key) {
