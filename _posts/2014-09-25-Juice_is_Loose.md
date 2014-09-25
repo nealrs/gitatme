@@ -13,9 +13,9 @@ description: "Shares.js reports social share counts for any URL"
 ud: "http://www.urbandictionary.com/define.php?term=juice&defid=30608"
 ---
 
-Whenever you publish new content: videos, blogs, infographics &mdash; anything with a unique URL &mdash; you want to know if it's got any <strong><a href="{{page.ud}}" title="The Juice via urban dictionary" target="_blank"> juice</a></strong>. Why? Because more juice &#10143; more traffic &#10143; more revenue.
+Whenever you publish new content: videos, blogs, infographics &mdash; anything with a unique URL &mdash; you want to know if it's got any <strong><a href="{{page.ud}}" title="The Juice via Urban Dictionary" target="_blank">juice</a></strong>. Why? Because more juice &#10143; more traffic &#10143; more revenue.
 
-Since social media reacts in real-time, I recommend measuring your juice with <strong><a href="{{ page.team }}" target="_blank" title="{{ page.pn }} on ChallengePost">{{page.an}}'s</a></strong> (heretofore underrated) <strong><a href="{{page.project}}" title="{{page.pn}} on GitHub" target="_blank">{{page.pn}}</a></strong> node module. It reports how many times a link has been shared across the most popular social networks.
+Since social media reacts in real-time, I recommend measuring your juice with <strong><a href="{{ page.author }}" target="_blank" title="{{ page.an }} on ChallengePost">{{page.an}}'s</a></strong> (heretofore underrated) <strong><a href="{{page.project}}" title="{{page.pn}} on GitHub" target="_blank">{{page.pn}}</a></strong> node module. It reports how many times a link has been shared across the most popular social networks.
 
 {{page.pn}} is great for web projects or rolling your own social _juice-o-meter_. In just a few lines of code, you can build a tool that audits your content everyday:
 
