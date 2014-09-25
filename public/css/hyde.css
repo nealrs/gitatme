@@ -342,3 +342,14 @@ img.avatar{
 .comment-no-bottom-margin {
   margin-bottom:0 !important;
 }
+
+.hidden { display:none; }
+
+.comment-preview {
+  border: 1px solid #cccccc;
+  padding:.5rem;
+  border-radius:6px;
+  width:100%;
+  /*font-size:14px;*/
+  margin-bottom:10px;
+}

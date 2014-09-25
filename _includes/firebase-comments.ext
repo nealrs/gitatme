@@ -51,6 +51,50 @@
     var firebase = "{{site.fbc-comments-firebase}}";
     var postId = "{{page.id || default}}";
     //var blogName = "{{site.name || default}}";
+    // set emojione options
+    emojione.imageType = 'svg';
+
+    // set up preview/edit click handling
+
+    // disable preview button if text area blank
+    /*$('#fbc-comment-form-preview').addClass('hidden');
+    $("#fbc-comment-message").on('keyup',function() {
+      if($("#fbc-comment-message").val() != '') {
+        $('#fbc-comment-form-preview').removeClass('hidden');
+      } else {
+          $('#fbc-comment-form-preview').addClass('hidden');
+        }
+    });*/
+
+    $("#fbc-comment-form-preview").click(function() {
+      console.log("preview");
+      $("#fbc-comment-form-preview").toggleClass("hidden");
+      $("#fbc-comment-form-edit").toggleClass("hidden");
+
+      $("#fbc-comment-message").toggleClass("hidden");
+
+      $("#fbc-comment-preview").html( emojione.toImage(marked($("#fbc-comment-message").val())) );
+      $("#fbc-comment-preview").toggleClass("hidden");
+
+    });
+
+    $("#fbc-comment-form-edit").click(function() {
+      console.log("edit");
+      $("#fbc-comment-form-edit").toggleClass("hidden");
+      $("#fbc-comment-form-preview").toggleClass("hidden");
+
+      $("#fbc-comment-message").toggleClass("hidden");
+      $("#fbc-comment-preview").toggleClass("hidden");
+    });
+
+    $("#fbc-comment-form-submit").click(function() {
+      console.log("submit");
+      $("#fbc-comment-form-edit").addClass("hidden");
+      $("#fbc-comment-form-preview").removeClass("hidden");
+
+      $("#fbc-comment-message").removeClass("hidden");
+      $("#fbc-comment-preview").addClass("hidden");
+    });
 
     // Sanitize the Firebase keys, since Jekyll allows more possible characters
     postId = sanitizeFirebaseKey(postId);
@@ -136,7 +180,7 @@
       $('#fbc-comment-form-submit').prop('disabled', false);
 
       // add emoji & markdown parsing at this step
-      emojione.imageType = 'svg';
+      //emojione.imageType = 'svg';
       var storecomment = emojione.toImage(marked(comment));
 
       fbPostComments.push({'uid': currentUser.uid, 'comment': storecomment, 'time': Firebase.ServerValue.TIMESTAMP
