@@ -67,7 +67,7 @@
     });*/
 
     $("#fbc-comment-form-preview").click(function() {
-      console.log("preview");
+      //console.log("preview");
       $("#fbc-comment-form-preview").toggleClass("hidden");
       $("#fbc-comment-form-edit").toggleClass("hidden");
 
@@ -79,7 +79,7 @@
     });
 
     $("#fbc-comment-form-edit").click(function() {
-      console.log("edit");
+      //console.log("edit");
       $("#fbc-comment-form-edit").toggleClass("hidden");
       $("#fbc-comment-form-preview").toggleClass("hidden");
 
@@ -88,7 +88,7 @@
     });
 
     $("#fbc-comment-form-submit").click(function() {
-      console.log("submit");
+      //console.log("submit");
       $("#fbc-comment-form-edit").addClass("hidden");
       $("#fbc-comment-form-preview").removeClass("hidden");
 
@@ -104,6 +104,9 @@
 
     var fbPostComments = fb.child("posts/" + postId);
     var fbPostCommentCount = fb.child("comment-counts/" + postId);
+
+    // notification queue (powered by zapier, sends me an SMS)
+    var fbQueue = fb.child("queue/");
 
     var currentUser = null;
 
@@ -194,6 +197,9 @@
           });
         }
       });
+
+      // add msg to queue for SMS notification
+      fbQueue.push({'story': postId, 'url': document.URL,'time': Firebase.ServerValue.TIMESTAMP});
     });
 
     // Display existing and future comments

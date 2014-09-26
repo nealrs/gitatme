@@ -29,7 +29,7 @@ function getCounts(url){
   });
 }
 
-// load up array with URLs or built a command line interface
+// load up this array with URLs or build a command line interface
 var urls = [
       'http://challengepost.com/',
       'http://gitat.me',
