@@ -96,6 +96,9 @@
       $("#fbc-comment-preview").addClass("hidden");
     });
 
+    // hide comment button.
+    $('.btn-comment').hide();
+
     // Sanitize the Firebase keys, since Jekyll allows more possible characters
     postId = sanitizeFirebaseKey(postId);
 
