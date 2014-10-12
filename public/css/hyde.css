@@ -73,15 +73,26 @@ html {
 
 /* Sidebar links */
 .sidebar a {
-  color: #001F3F;
+  color: #FFF;
 }
 
 /* About section */
 .sidebar-about h1 {
-  color: #001F3F;
+  color: #FFF;
   margin-top: 0;
-  font-family: "Open Sans", serif;
+  /*font-family: "Open Sans", serif;*/
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
   font-size: 3.2rem;
+}
+
+.header_at_sign {
+  color:#7FDBFF;
+}
+
+.signup_prompt{
+  /*font-style:italic;*/
+  font-size: 1rem;
 }
 
 /* Sidebar nav */
@@ -177,15 +188,16 @@ a.sidebar-nav-item:focus {
 
 /* g@m */
 .theme-base-gam .sidebar {
-  /*background-color: #8f5536;*/
-  background-image: url(/public/redox_01.png);
+  background-color: #8f5536;
+  background-image: url(/public/dark_mosaic_@2X.png);
   background-repeat:repeat;
+  background-size:300px 295px;
 
-  color: #2e2d2d;
+  color: #AAAAAA;
 }
 .theme-base-gam .content a,
 .theme-base-gam .related-posts li a:hover {
-  color: #001F3F;
+  color: #0074D9;
 }
 
 

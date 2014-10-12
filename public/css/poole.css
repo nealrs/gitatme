@@ -75,7 +75,7 @@ a strong {
 }
 /* `:focus` is linked to `:hover` for basic accessibility */
 a:hover,
-a:focus {
+a:focus{
   text-decoration: underline;
   /*border-bottom: 1px dotted;*/
 }
@@ -343,6 +343,8 @@ tbody tr:nth-child(odd) th {
 .page-title,
 .post-title {
   margin-top: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
 }
 
 /* Meta data line below post title */

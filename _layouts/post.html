@@ -4,7 +4,7 @@ layout: default
 
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }} &middot; {% for tag in page.tags %} <span class="langtag">{{tag}}</span> {% endfor %}</span>
+  <span class="post-date">{{ page.date | date: "%m.%d.%y" }} &middot; {% for tag in page.tags %} <span class="langtag">{{tag}}</span> {% endfor %}</span>
   {{ content }}
 
   <!-- FIREBASE COMMENTS -->
@@ -26,3 +26,5 @@ layout: default
     <span class="pagination-item newer">Next&nbsp;&raquo;</span>
   {% endif %}
 </div>
+
+<div style="text-align:center;padding-top:15px;"><i class="fa fa-copyright" title="Copyright" alt="&copy;"></i> {{ site.time | date: '%Y' }}&nbsp;<a href="http://nealshyam.com" title="Git@Me is written by Neal Shyam" target="_blank">Neal Shyam</a></div>

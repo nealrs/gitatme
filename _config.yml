@@ -6,7 +6,7 @@ highligher:       pygments
 permalink:        pretty
 
 # Setup
-title:            Git @ Me
+title:            Git@Me
 tagline:          'Discover great open source projects every week'
 description:      'Exploring open source'
 url:              http://gitat.me
