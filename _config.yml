@@ -10,7 +10,7 @@ permalink:        pretty
 # Setup
 title:            Git@Me
 tagline:          'Discover great open source projects every week'
-description:      'Exploring open source'
+description:      'exploring open source'
 url:              http://gitat.me
 baseurl:          /
 fbc-comments-firebase: https://gitat-me.firebaseio.com/

@@ -189,7 +189,7 @@ a.sidebar-nav-item:focus {
 
 /* g@m */
 .theme-base-gam .sidebar {
-  background-color: #8f5536;
+  background-color: #111111;
   background-image: url(/public/dark_mosaic_@2X.png);
   background-repeat:repeat;
   background-size:300px 295px;
@@ -365,4 +365,8 @@ img.avatar{
   width:100%;
   /*font-size:14px;*/
   margin-bottom:10px;
+}
+
+strong {
+  font-weight:500;
 }
