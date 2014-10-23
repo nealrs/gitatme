@@ -370,3 +370,7 @@ img.avatar{
 strong {
   font-weight:500;
 }
+
+img.demo {
+  border: 1px solid #111111; border-radius:4px;
+}
