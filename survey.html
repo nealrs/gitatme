@@ -1,0 +1,49 @@
+---
+layout: page
+title: "Reader Survey"
+---
+<div id="form_container">
+  <form id="survey">
+
+    <p>What languages &amp; topics are you interested in? <span style="color:#FF4136;">*</span><br>
+    <textarea name = "1" class="surveyinput" required></textarea></p>
+
+    <p>What's missing from Git@Me? <span style="color:#FF4136;">*</span><br>
+    <textarea name = "2" class="surveyinput" required></textarea></p>
+
+    <p>What's your favorite <em>under the radar</em> project?<br>
+    <textarea name = "3" class="surveyinput"></textarea></p>
+
+    <p>Any other feedback?<br>
+    <textarea name = "4" class="surveyinput"></textarea></p>
+
+    <center><button type="submit" value="submit" class="btn btn-primary btn-comment" style="border: none;"/>Complete survey</button></center>
+
+  </form>
+</div>
+
+<div style="text-align:center;padding-top:15px;"><i class="fa fa-copyright" title="Copyright" alt="&copy;"></i> {{ site.time | date: '%Y' }}&nbsp;<a href="http://nealshyam.com" title="Git@Me is written by Neal Shyam" target="_blank">Neal Shyam</a></div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type='text/javascript' src='//cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
+<script>
+  function postsub(){
+    console.log('ok, so that form submission should have worked...');
+    //alert('Thanks for your time!');
+
+    $("#form_container").html('<center><img style="text-align:center;" src = "http://media.giphy.com/media/ip6n2oVNZBHiM/giphy.gif" title="Thanks for your feedback!"></center>');
+  }
+
+  $('#survey').submit(function(e) {
+    e.preventDefault();
+    data = $('#survey').serializeArray();
+    // push data to firebase
+    var fb = new Firebase('https://gitat-me.firebaseIO.com/survey');
+    fb.push({
+      '1':data[0]['value'],
+      '2':data[1]['value'],
+      '3':data[2]['value'],
+      '4':data[3]['value']
+    }, postsub());
+  });
+</script>
