@@ -1,0 +1,89 @@
+---
+layout: page
+title: "Survey Results"
+---
+<table>
+  <thead>
+    <tr>
+      <td style="font-weight:500;">What languages &amp; topics are you interested in?</td>
+    </tr>
+  </thead>
+  <tbody id="q1">
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <td style="font-weight:500;">What's missing from Git@Me?</td>
+    </tr>
+  </thead>
+  <tbody id="q2">
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <td style="font-weight:500;">What's your favorite under the radar project?</td>
+    </tr>
+  </thead>
+  <tbody id="q3">
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <td style="font-weight:500;">Any other feedback?</td>
+    </tr>
+  </thead>
+  <tbody id="q4">
+  </tbody>
+</table>
+
+<div style="text-align:center;padding-top:15px;"><i class="fa fa-copyright" title="Copyright" alt="&copy;"></i> {{ site.time | date: '%Y' }}&nbsp;<a href="http://nealshyam.com" title="Git@Me is written by Neal Shyam" target="_blank">Neal Shyam</a></div>
+
+<script src="https://cdn.firebase.com/js/client/1.0.21/firebase.js"></script>
+<script>
+  var fb = new Firebase("https://gitat-me.firebaseio.com/survey");
+
+  fb.on('child_added', function (snapshot) {
+    var row = snapshot.val();
+
+    var r1 = document.createElement('tr');
+    var r2 = document.createElement('tr');
+    var r3 = document.createElement('tr');
+    var r4 = document.createElement('tr');
+
+    var t1 = document.createElement('td');
+    var t2 = document.createElement('td');
+    var t3 = document.createElement('td');
+    var t4 = document.createElement('td');
+
+    if (row[1]){
+      t1.innerHTML = row[1].replace(/(?:\r\n|\r|\n)/g, '<br />');
+      r1.appendChild(t1);
+      document.getElementById('q1').appendChild(r1);
+    }
+
+    if (row[2]){
+      t2.innerHTML = row[2].replace(/(?:\r\n|\r|\n)/g, '<br />');
+      r2.appendChild(t2);
+      document.getElementById('q2').appendChild(r2);
+    }
+
+    if (row[3]){
+      t3.innerHTML = row[3].replace(/(?:\r\n|\r|\n)/g, '<br />');
+      r3.appendChild(t3);
+      document.getElementById('q3').appendChild(r3);
+    }
+
+    if (row[4]){
+      t4.innerHTML = row[4].replace(/(?:\r\n|\r|\n)/g, '<br />');
+      r4.appendChild(t4);
+      document.getElementById('q4').appendChild(r4);
+    }
+
+  });
+</script>
