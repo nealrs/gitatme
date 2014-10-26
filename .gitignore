@@ -39,3 +39,9 @@ validation-report.json
 
 # Folders to ignore
 node_modules
+
+mirror.sh
+
+deploy.sh
+
+_deploy.sh
