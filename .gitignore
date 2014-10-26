@@ -43,5 +43,8 @@ node_modules
 mirror.sh
 
 deploy.sh
+<<<<<<< HEAD
 
 _deploy.sh
+=======
+>>>>>>> FETCH_HEAD
