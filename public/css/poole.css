@@ -49,9 +49,8 @@ body {
 
 html {
   font-family: "Ubuntu", Helvetica, Arial, sans-serif;
-  /*font-size: 16px;*/
   font-weight:300;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 @media (min-width: 38em) {
   html {
@@ -60,7 +59,7 @@ html {
 }
 
 body {
-  color: #515151;
+  color: #32332b;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
@@ -68,8 +67,11 @@ body {
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: #268bd2;
+  color: #0099cc;
   text-decoration: none;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
 }
 a strong {
   color: inherit;
@@ -78,19 +80,20 @@ a strong {
 a:hover,
 a:focus{
   text-decoration: underline;
+  color: #00698c;
   /*border-bottom: 1px dotted;*/
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: .5rem;
+  margin-bottom: .7rem;
   font-weight: bold;
   line-height: 1.25;
   color: #313131;
   text-rendering: optimizeLegibility;
 }
 h1 {
-  font-size: 1.75rem;
+  font-size: 1.8rem; /* 36px */
 }
 h2 {
   margin-top: 1rem;
@@ -110,11 +113,6 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-
-strong {
-  color: #303030;
-}
-
 
 /* Lists */
 ul, ol, dl {
@@ -147,6 +145,12 @@ abbr {
 abbr[title] {
   cursor: help;
   border-bottom: 1px dotted #e5e5e5;
+}
+
+/* font awesome fork icon */
+.fa-code-fork {
+  color: #32332b;
+  margin: 0.5em 0;
 }
 
 /* Code */
@@ -261,8 +265,11 @@ tbody tr:nth-child(odd) th {
  */
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 1.3rem; /* 18px */
   font-weight: 300;
+  text-transform: none;
+  letter-spacing: 1.6px;
+  line-height: 1rem;
 }
 
 
@@ -336,11 +343,22 @@ tbody tr:nth-child(odd) th {
 }
 
 /* Blog post or page title */
-.page-title,
-.post-title,
+/*.page-title,
+.post-title{
+
+}*/
+
 .post-title a {
-  color: #303030;
+  color: #0099cc;
 }
+
+.post-title a:hover,
+.post-title a:focus{
+  text-decoration: underline;
+  color: #00698c;
+  /*border-bottom: 1px dotted;*/
+}
+
 .page-title,
 .post-title {
   margin-top: 0;
@@ -353,7 +371,8 @@ tbody tr:nth-child(odd) th {
   display: block;
   margin-top: -.25rem;
   margin-bottom: .5rem;
-  color: #9a9a9a;
+  color: #979991;
+  font-size: 16px;
 }
 
 /* Related posts */
