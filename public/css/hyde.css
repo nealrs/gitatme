@@ -347,6 +347,7 @@ a.btn {
 
 .social {
   color: #7d8075;
+  font-size: .8rem;
 }
 
 
@@ -426,3 +427,5 @@ strong {
 img.demo {
   border: 1px solid #111111; border-radius:4px;
 }
+
+/* responsive video stuff (see hacking 90s nostalgia for more)*/

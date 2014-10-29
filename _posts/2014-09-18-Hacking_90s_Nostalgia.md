@@ -3,7 +3,7 @@ layout: post
 
 title: "Hacking 90s Nostalgia"
 date: 2014-09-18 10:00:00
-tags: javascript leap
+tags: javascript hardware
 
 project: "https://github.com/jhil/bopit"
 author: "https://github.com/jhil"
