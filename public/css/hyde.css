@@ -319,7 +319,7 @@ a.btn {
   border:1px solid #cccccc;
   padding:6px;
 
-  margin:.3rem;
+  margin:.3rem 0;
 
   font-size:18px;
   text-align:center;

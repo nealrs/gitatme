@@ -32,6 +32,6 @@ Since a lot of my projects involve CSS and tables are expensive, I'm glad that I
 <center><img src="{{page.img}}" class="demo" alt="{{ page.pn }} demo">
 </center>
 
-{{page.pn}} quickly diagnoses CSS issues and will save you a fortune on furniture. You can use it via <strong><a href="{{ page.chrome }}" target="_blank" title="{{page.pn}} Chrome extension">Chrome extension</a></strong>, bookmarklet, or stylesheet.
+{{page.pn}} quickly diagnoses CSS layout issues and will save you a fortune on furniture. You can use it via <strong><a href="{{ page.chrome }}" target="_blank" title="{{page.pn}} Chrome extension">Chrome extension</a></strong>, bookmarklet, or stylesheet.
 
 <center><a href="{{ page.url }}#comments" class="btn btn-primary btn-comment" title="Discuss this issue of Git @ Me online">Join the discussion</a></center>
