@@ -96,7 +96,7 @@
       $("#fbc-comment-preview").addClass("hidden");
     });
 
-    // hide comment button.
+    // hide comment button (because i mean, you're on a page where you CAN comment)
     $('.btn-comment').hide();
 
     // Sanitize the Firebase keys, since Jekyll allows more possible characters
@@ -211,6 +211,7 @@
       var messageComment = message.comment;
       var messageTime = new Date(message.time).toLocaleDateString();
       if (messageTime == "Invalid Date"){messageTime = "¯\\_(ツ)_/¯";}
+      var messageOrder = message.time;
 
       fb.child("users/" + message.uid).once('value', function (userSnap) {
         var user = userSnap.val();
@@ -221,13 +222,25 @@
           displayName: scrubComment(user.displayName),
           picture: scrubComment(user.picture),
           link: scrubComment(user.link),
-          time: scrubComment(messageTime)
+          time: scrubComment(messageTime),
+          order: messageOrder
         });
 
         $("#fbc-comments-list").append(commentHtml);
 
         // override default styling for last p tag in each comment block - don't want the default margin-bottom.
-        $(".comment-text").find("p:last-of-type").addClass("comment-no-bottom-margin");
+  $(".comment-text").find("p:last-of-type").addClass("comment-no-bottom-margin");
+
+        // sort comments by timestamp - not sure why this is even neccesary. [http://stackoverflow.com/questions/21267120/jquery-sort-by-id-element]
+        $("#fbc-comments-list div.clearfix.comment-block").sort(function (a, b) {
+            return parseInt(a.id) > parseInt(b.id);
+        }).each(function () {
+            var elem = $(this);
+            console.log(elem);
+            elem.remove();
+            $(elem).appendTo("#fbc-comments-list");
+        });
+
       })
     });
     fbPostCommentCount.on('value', function (snapshot) {
