@@ -428,4 +428,29 @@ img.demo {
   border: 1px solid #111111; border-radius:4px;
 }
 
+#survey_banner{
+  width:100%;
+  /*text-align:center;*/
+  background-color:#FFDC00;
+  border-radius:4px;
+  clear: both;
+  overflow: hidden;
+  padding:4px 8px;
+  margin-bottom:5px;
+}
+
+#survey_banner a {
+  color:#111111;
+}
+
+.prompt_banner{
+  float:left;
+  text-align:center;
+}
+
+.close_banner{
+  float:right;
+  text-align:right;
+  cursor:pointer;
+}
 /* responsive video stuff (see hacking 90s nostalgia for more)*/
