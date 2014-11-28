@@ -453,4 +453,23 @@ img.demo {
   text-align:right;
   cursor:pointer;
 }
+
+#about{
+  text-align:left;
+  background-color:#333333;
+  opacity:0.8;
+  border-radius:4px;
+  padding:4px 8px;
+
+  clear: both;
+  overflow: hidden;
+
+  display:none;
+}
+
+.close_about{
+  float:right;
+  text-align:right;
+  cursor:pointer;
+}
 /* responsive video stuff (see hacking 90s nostalgia for more)*/
