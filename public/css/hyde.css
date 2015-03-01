@@ -74,6 +74,14 @@ html {
 .sidebar a {
   color: #FFF;
 }
+/*
+.sidebar a:active, a:hover {
+  color: #979991;
+}
+
+h1.sidebar a:active, a:hover {
+  color: #FFF;
+}*/
 
 /* About section */
 .sidebar-about h1 {
@@ -312,7 +320,7 @@ a.btn {
   margin-bottom: 1rem;
 }
 
-.emailinput{
+.searchinput{
   font-family: "Ubuntu", Helvetica, Arial, sans-serif;
   width:80%;
   border-radius:4px;
@@ -325,6 +333,11 @@ a.btn {
   text-align:center;
   /*margin-bottom:.7rem;*/
 }
+
+.searchinput::-webkit-input-placeholder::before { font-family: fontAwesome; content:'\f002  ';}
+.searchinput::-moz-placeholder::before  { font-family: fontAwesome; content:'\f002  ';} /* firefox 19+ */
+.searchinput:-ms-input-placeholder::before  { font-family: fontAwesome; content:'\f002  ';} /* ie */
+.searchinput:-moz-placeholder::before  { font-family: fontAwesome; content:'\f002  ';}
 
 .surveyinput{
   font-family: "Ubuntu", Helvetica, Arial, sans-serif;
@@ -472,4 +485,5 @@ img.demo {
   text-align:right;
   cursor:pointer;
 }
+
 /* responsive video stuff (see hacking 90s nostalgia for more)*/

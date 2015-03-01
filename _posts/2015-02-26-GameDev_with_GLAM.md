@@ -18,7 +18,7 @@ video: "http://www.youtube.com/embed/BlMfL2_dn-E"
 gallery: "http://tparisi.github.io/glam/#demos"
 ---
 
-On Monday night I made my first 3D game. It's called <strong><a href="{{page.demo}}" target="_blank" title="Click to play BubbleZap 3D">BubbleZap 3D</a></strong> and the goal is to pop 50 floating bubbles in 60 seconds. Give it a spin &mdash; it's harder than it looks! (Don't forget, you can spin around & look up/down)
+On Monday night I made my first 3D game. It's called <strong><a href="{{page.demo}}" target="_blank" title="Click to play BubbleZap 3D">BubbleZap 3D</a></strong> and the goal is to pop 50 floating bubbles in 60 seconds. It's harder than it looks, so don't forget to move around and look up/down.
 
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='{{page.video}}' frameborder='0' allowfullscreen alt="BubbleZap demo video"></iframe></div>
 
