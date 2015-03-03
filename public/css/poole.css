@@ -359,8 +359,27 @@ tbody tr:nth-child(odd) th {
   /*border-bottom: 1px dotted;*/
 }
 
+
+.makefile-title a {
+  color: #505050;
+}
+
+.makefile-title a:hover,
+.makefile-title a:focus{
+  text-decoration: underline;
+  color: #001f3f;
+  /*border-bottom: 1px dotted;*/
+}
+
+.makefile-header{
+  background-color:#f9f9f9;
+  padding:4px;
+
+}
+
 .page-title,
-.post-title {
+.post-title,
+.makefile-title {
   margin-top: 0;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 500;

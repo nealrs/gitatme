@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<div class="post">
+
+  <!-- survey banner -->
+  {% include survey_banner.html %}
+
+  <h1 class="post-title">{{ page.title }}</h1>
+  <span class="post-date">{{ page.date | date: "%m.%d.%y" }} &middot; {% for tag in page.tags %} <span class="langtag"><a href="/archive/#{{tag}}" title="all {{tag}} issues" target="_blank">{{tag}}</a></span> {% endfor %}</span>
+
+  <p class="makefile-header"><em>Makefile posts are about my personal projects, code snippets, and lessons I've learned. They aren’t part of the newsletter.</em></p>
+
+  {{ content }}
+
+  <!-- FIREBASE COMMENTS -->
+  <span id="comments">
+    {% include firebase-comments.js %}
+  </span>
+  <!-- END FIREBASE COMMENTS -->
+</div>
+
+<div class="pagination">
+  {% if page.previous.url %}
+    <a class="pagination-item older" href="{{page.previous.url}}">&laquo;&nbsp;Previous</a>
+  {% else %}
+    <span class="pagination-item older">&laquo;&nbsp;Previous</span>
+  {% endif %}
+  {% if page.next.url %}
+    <a class="pagination-item newer" href="{{page.next.url}}">Next&nbsp;&raquo;</a>
+  {% else %}
+    <span class="pagination-item newer">Next&nbsp;&raquo;</span>
+  {% endif %}
+</div>
+
+<div style="text-align:center;padding-top:15px;"><i class="fa fa-copyright" title="Copyright" alt="&copy;"></i> {{ site.time | date: '%Y' }}&nbsp;<a href="http://nealshyam.com" title="Git@Me is written by Neal Shyam" target="_blank">Neal Shyam</a></div>
