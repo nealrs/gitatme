@@ -82,4 +82,4 @@ Yikes on bikes &mdash; that's ugly! But still, are _any_ of these pairs useable?
 
 Here's to never clashing with your clients again! _See what I did there?_
 
-<center><a href="{{ page.url }}#comments" class="btn btn-primary btn-comment" title="Discuss this issue of Git @ Me online">Do you event comment bruh?</a></center>
+<center><a href="{{ page.url }}#comments" class="btn btn-primary btn-comment" title="Discuss this issue of Git @ Me online">Comment with markdown & emoji</a></center>
