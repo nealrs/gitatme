@@ -23,7 +23,7 @@ title: Home
     <span class="post-date">{{ post.date | date: "%m.%d.%y" }} &middot; {% for tag in post.tags %} <span class="langtag"><a href="/archive/#{{tag}}" title="all {{tag}} issues" target="_blank">{{tag}}</a></span> {% endfor %} </span>
 
     {% if post.layout == "makefile" %}
-    <p class="makefile-header"><em>Makefile posts are about my personal projects, code snippets, and lessons I've learned. They aren’t part of the newsletter.</em></p>
+    <p class="makefile-header"><em>Makefiles are about my personal projects and things I've learned.</em></p>
     {% endif %}
 
     {{ post.content }}
