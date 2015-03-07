@@ -48,15 +48,15 @@ After looking the basic <strong><a href="http://jlord.us/sheetsee.js/demos/demo-
 
 3. If you have less than 500 projects, delete the extra rows. If you have more, copy down the formula in `tableNum` (A) to assign extra table numbers. And if you need to reorder / reassign table numbers, (e.g. drones must be at tables 70&ndash;100), you're in control.
 
-4. Select `Publish sheet to web` from the `File` menu and copy the sheet URL. It contains a sheet id which looks something like: `1kaNq96j0S76A2P_dk82VekiruiWEQXTu5hT0POPywe4`.
+4. Select `Publish sheet to web` from the `File` menu and copy the sheet URL. It contains a sheet id which looks something like: `1kaNq96j0S76A2P_dk82Vek`.
 
-5. Replace the `id` and `name` parameters in this URL with the id from step 4 and the URL-encoded name of your hackathon: <strong><a href="http://nealrs.github.io/hackathon_tables/?id=1kaNq96j0S76A2P_dk82VekiruiWEQXTu5hT0POPywe4&name=PennApps%20W15" target="_blank" title="Hackathon Tables Demo for PennApps Winter 15">http://nealrs.github.io/&#8203;hackathon_tables/&#8203;?id=1kaNq96j0S76A2P_&#8203;dk82VekiruiWEQXTu5hT0POPywe4&#8203;&name=PennApps%20W15</a></strong>
+5. Replace the `id` and `name` parameters in this URL with the id from step 4 and the URL-encoded name of your hackathon: <strong><a href="http://nealrs.github.io/hackathon_tables/?id=1kaNq96j0S76A2P_dk82VekiruiWEQXTu5hT0POPywe4&name=PennApps%20W15" target="_blank" title="Hackathon Tables Demo for PennApps Winter 15">nealrs.github.io/&#8203;hackathon_tables/&#8203;?id=XYZ123&name=PennApps%20W15</a></strong>
 
 6. Shorten the URL and share it via email, Twitter, Snapchat, or whatever.
 
 That's it. You're done in less than 5 minutes. Here's what it looks like:
 
-<center><img src="http://challengepost-assets.s3.amazonaws.com/emails/hackathon-manager/tables.gif" alt="Hackathon Table Demo" class="demo"></center>
+<center><a href="http://nealrs.github.io/hackathon_tables/?id=1kaNq96j0S76A2P_dk82VekiruiWEQXTu5hT0POPywe4&name=PennApps%20W15" target="_blank" title="Hackathon Tables Demo for PennApps Winter 15"><img src="http://challengepost-assets.s3.amazonaws.com/emails/hackathon-manager/tables.gif" alt="Hackathon Table Demo" class="demo"></a></center>
 
 The app has a search filter and downloads all of the data locally. Hackers can look for their project by name to find their table and sponsors can identify  projects using their tech. Since it's a static page hosted on GitHub, there's nothing to deploy either.
 
