@@ -1,7 +1,7 @@
 ---
 layout: makefile
 
-title: "Makefile: My Favorite Aliases"
+title: "My Favorite Aliases"
 date: 2015-03-02 10:00:00
 tags: makefile shell
 

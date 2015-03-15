@@ -1,7 +1,7 @@
 ---
 layout: makefile
 
-title: "Makefile: Hackathon Table Numbers"
+title: "Hackathon Table Numbers"
 date: 2015-03-07 10:00:00
 tags: makefile javascript
 
