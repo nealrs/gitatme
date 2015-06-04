@@ -20,7 +20,7 @@ img: "http://gam.s3.amazonaws.com/img/i90.gif"
 
 How adaptive is your app? Maybe it accounts for browser capabilities, screen size, language, and even location &mdash; but what about _time_?
 
-Recently, developers have started to consider time in their UX. After all, your office isn't a windowless casino. Two examples: Apple new dark mode in Mavericks and F.lux, which adjusts screen brightness & tint based on the sun cycle.
+Recently, developers have started to consider time in their UX. After all, your office isn't a windowless casino. Two examples: Apple's new dark mode in Mavericks and F.lux, which adjusts screen brightness & tint based on the sun cycle.
 
 Smarten up your app with
 <strong><a href="{{page.project}}" title="{{page.pn}} on GitHub" target="_blank">{{page.pn}}</a></strong>, a JavaScript library that swaps CSS files based on the time of day:
