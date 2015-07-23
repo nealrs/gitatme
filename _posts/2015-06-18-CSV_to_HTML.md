@@ -6,7 +6,7 @@ date: 2015-06-18 10:00:00
 tags: javascript css
 
 project: "https://github.com/derekeder/csv-to-html-table"
-author: "https://github.com/derekeder/csv-to-html-table"
+author: "https://github.com/derekeder"
 
 pn: "CSV to HTML Table"
 an: "Derek Eder"
