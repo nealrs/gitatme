@@ -2,7 +2,7 @@
 layout: post
 
 title: "Scrub, redact, and relax"
-date: 2015-11-5 10:00:00 EST
+date: 2015-11-12 10:00:00 EST
 tags: python
 
 project: "https://github.com/firstlook/pdf-redact-tools"
