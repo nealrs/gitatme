@@ -19,6 +19,8 @@ author:
   name:           'Neal Shyam'
   url:            https://twitter.com/nealrs
 
+
+gems: [jekyll-paginate]
 paginate:         5
 
 # Custom vars
