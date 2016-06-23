@@ -4,18 +4,10 @@ layout: default
 
 <div class="post">
 
-  <!-- survey banner -->
-  {% include survey_banner.html %}
-
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date: "%m.%d.%y" }} &middot; {% for tag in page.tags %} <span class="langtag"><a href="/archive/#{{tag}}" title="all {{tag}} issues" target="_blank">{{tag}}</a></span> {% endfor %}</span>
   {{ content }}
 
-  <!-- FIREBASE COMMENTS -->
-  <span id="comments">
-    {% include firebase-comments.js %}
-  </span>
-  <!-- END FIREBASE COMMENTS -->
 </div>
 
 <div class="pagination">
