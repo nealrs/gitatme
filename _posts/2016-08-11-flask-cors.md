@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: "Cross Origin Sharing Pain"
+title: "Cross Origin Really Sucks"
 date: 2016-08-11 10:00:00 EST
 tags: python
 
