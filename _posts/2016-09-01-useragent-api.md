@@ -14,14 +14,14 @@ description: "useragent-api is a Python API which returns a random user agent st
 
 issue: 153
 
-img: "http://gam.s3.amazonaws.com/img/i152.gif"
-
 ---
 
-Web scraping is in the middle of an arms race. Last week I read [an article by Francis Kim](https://franciskim.co/2016/08/24/dont-need-no-stinking-api-web-scraping-2016-beyond/) about how scraping&mdash;every hacker's favorite tool for getting around APIs, data-mining, and liberating data&mdash;has become harder, because sites are getting better at identifying scrapers and shutting them out.
+Web scraping is in the middle of an arms race. Last week, I read [an article by Francis Kim](https://franciskim.co/2016/08/24/dont-need-no-stinking-api-web-scraping-2016-beyond/) about how scraping&mdash;every hacker's favorite tool for getting around APIs, data-mining, and liberating data&mdash;has become harder, because sites are getting better at identifying scrapers and shutting them out.
 
-Francis lays out a bunch of solutions ([including some sneaky CAPTCHA tricks](http://antigate.com/)) for defeating anti-scraping measures, but I was surprised that neither he nor any commenters referred to user agent strings.
+Francis lays out a bunch of solutions ([including an alarming anti-CAPTCHA service](http://antigate.com/)) for defeating anti-scraping measures. However I was surprised that neither he nor any commenters mentioned user agent strings.
 
-PhantomJS, Selenium, and other automation tools often allow you to specify a particular UA string, so why aren't more people using this to make their scrapers appear to be real, random browsers?
+PhantomJS, Selenium, and other automation tools usually allow you to spoof a particular UA, so why aren't more people using this to make their scrapers appear to be real, random browsers?
 
-A couple days later, I came across [{{page.an}}]({{page.author}})' [{{page.pn}}]({{page.project}})which returns a random ua string every time you make a request. It's not a panacea, but is an elegant solution for masking your scripts intentions &amp; provenance.
+A few days later, I came across [{{page.an}}' {{page.pn}}]({{page.project}}) which returns a random UA string every time you make a request. It's not a panacea, but is an elegant solution for masking your scripts intentions &amp; provenance.
+
+Unlike the Cold War, I think the battle over scraping is going to get _hot_. Keep your eyes peeled.
