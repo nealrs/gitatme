@@ -16,13 +16,13 @@ This week's hack combines three things: blogs, podcasts, and Amazon Alexa. Why? 
 
 The _best_ Flash Briefing skills, like NPR, use prerecorded audio, but the API supports text-to-speech too, so you have Alexa read your latest posts to you every time you invoke the flash briefing. Basically, it's an instant podcast. Pretty neat, right?
 
-My [alexafeed.json](https://gist.github.com/nealrs/e6985003ca56cc6f8c980efbb0d0e670#file-examplefeed-json) Jekyll plugin creates a Alexa Flash Briefing compatible json feed. It uses the latest 3 posts from the _current day_ and puts them in the correct JSON format. It strips HTML and new lines, - so the JSON validates. By default, it includes the _entire_ post, but you can customize it to just use excerpts -- which I recommend.
+My [alexafeed.json](https://gist.github.com/nealrs/e6985003ca56cc6f8c980efbb0d0e670#file-examplefeed-json) Jekyll plugin creates a Alexa Flash Briefing compatible json feed. It uses the latest 3 posts from the _current day_ and puts them in the correct JSON format. It strips HTML and new lines, so the JSON validates. By default, it includes the _entire_ post, but you can customize it to just use excerpts -- which I recommend.
 
 There are a few prerequisites:
 
 1. You already have a standard, live, working Jekyll blog that's deployed to a public server.
 
-2. You update your blog _at least daily_. If not, your content will get stale quickly and nobody wants to hear the same story over and over in their briefing - especially if you write long posts._
+2. You update your blog _at least daily_. If not, your content will get stale quickly and nobody wants to hear the same story over and over in their briefing, especially if you write long posts.
 
 Get it up and running:
 
@@ -42,3 +42,5 @@ There are a few customization options &amp; notes:
 - Change `post.content` to `post.excerpt` on line 12 if you don't want Alexa to read out your entire post. Excerpts cut content at the first `\n\n`. I'd actually recommend doing this if your posts exceed 500 words.
 
 - `streamURL` is set as null, because as designed, this is a text-to-speech feed, unlike the NPR feeds which are audio driven. If you want to instead use audio, you'll need to host audio, include a filename pointer in your post markdown, and change the briefing type of your skill.
+
+- I'm not totally sure how to deal with special characters / escaping html entities in a bullet proof format - but Alexa will try to read them / does a pretty good job.
