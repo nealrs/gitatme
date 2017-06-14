@@ -35,6 +35,8 @@ Get it up and running:
 7. Submit your skill for certification.
 8. Upon certification, tell all your friends to add your Skill to their Briefing (Alexa skills do have URLs)
 
+**FYI!** Alexa does offer some play and subscriber metrics, so you can track how well you're marketing efforts are working. Metrics for Flash Briefing skills are new and way better than anything Apple ever offered podcasters.
+
 There are a few customization options &amp; notes:
 
 - Flash briefing feeds support between 1 and 5 items, so change the `limit:3` depending on how frequently you publish new content.
