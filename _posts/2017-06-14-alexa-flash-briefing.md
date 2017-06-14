@@ -2,8 +2,8 @@
 layout: post
 
 title: "Turn your blog into a podcast"
-date: 2017-06-14 8:50:00 EST
-tags: json, alexa
+date: 2017-06-14 4:50:00 EST
+tags: json alexa
 
 description: "Turn your Jekyll blog into an Amazon Flash Briefing Skill. Instant podcasting!"
 issue: 163
@@ -16,7 +16,7 @@ This week's hack combines three things: blogs, podcasts, and Amazon Alexa. Why? 
 
 The _best_ Flash Briefing skills, like NPR, use prerecorded audio, but the API supports text-to-speech too, so you have Alexa read your latest posts to you every time you invoke the flash briefing. Basically, it's an instant podcast. Pretty neat, right?
 
-My [alexafeed.json](https://gist.github.com/nealrs/e6985003ca56cc6f8c980efbb0d0e670#file-examplefeed-json) Jekyll plugin creates a Alexa Flash Briefing compatible json feed. It uses the latest 3 posts from the _current day_ and puts them in the correct JSON format. It strips HTML, weird characters, and new lines, - so the JSON validates. By default, it includes the _entire_ post, but you can customize it to just use excerpts -- which I recommend.
+My [alexafeed.json](https://gist.github.com/nealrs/e6985003ca56cc6f8c980efbb0d0e670#file-examplefeed-json) Jekyll plugin creates a Alexa Flash Briefing compatible json feed. It uses the latest 3 posts from the _current day_ and puts them in the correct JSON format. It strips HTML and new lines, - so the JSON validates. By default, it includes the _entire_ post, but you can customize it to just use excerpts -- which I recommend.
 
 There are a few prerequisites:
 
@@ -27,7 +27,7 @@ There are a few prerequisites:
 Get it up and running:
 
 1. Download alexafeed.json and place it in the root folder of your Jekyll blog.
-2. Generate your site, and verify that `http://your.site/alexa.json` is producing valid JSON.
+2. Generate your site, and verify that http://your.site/alexa.json is producing valid JSON.
 3. [Follow all the steps in this tutorial](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/steps-to-create-a-flash-briefing-skill) and input your site URL in step 8.
 4. Enable your skill by opening the Alexa app on your phone, navigating to the Skills tab, clicking _Your Skills_, and selecting your Flash Briefing Skill.
 5. Say "Alexa, what’s my Flash Briefing?" to your Echo.
@@ -35,7 +35,7 @@ Get it up and running:
 7. Submit your skill for certification.
 8. Upon certification, tell all your friends to add your Skill to their Briefing (Alexa skills do have URLs)
 
-There are a few customization options:
+There are a few customization options &amp; notes:
 
 - Flash briefing feeds support between 1 and 5 items, so change the `limit:3` depending on how frequently you publish new content.
 

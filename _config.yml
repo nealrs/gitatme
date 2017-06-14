@@ -1,8 +1,7 @@
 # Dependencies
-markdown:         redcarpet
 highligher:       pygments
-redcarpet:
-  extensions: ['smart']
+#redcarpet:
+  #extensions: ['smart']
 
 # Permalinks
 permalink:        pretty
