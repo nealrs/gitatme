@@ -9,7 +9,7 @@ permalink:        pretty
 
 # Setup
 title:            Git@Me
-tagline:          'Discover great open source projects every week'
+tagline:          'Discover great open source projects'
 description:      'exploring open source'
 url:              http://gitat.me
 baseurl:          /

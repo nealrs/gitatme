@@ -52,3 +52,5 @@ _deploy.sh
 .env
 
 s3_website.yml
+
+.jekyll-metadata
